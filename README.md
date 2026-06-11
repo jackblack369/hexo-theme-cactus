@@ -156,6 +156,23 @@ You have two options for the list of blog posts on the home page:
       show_all_posts: true
     ```
 
+### Sticky (pinned) posts
+
+You can pin specific posts to the top of the blog posts list on the home page by
+adding a `sticky` field to a post's front-matter. The value is the weight: a
+higher number is shown first, and sticky posts always appear above non-sticky
+ones regardless of date.
+
+```yml
+---
+title: Welcome / Start here
+sticky: 100
+---
+```
+
+Posts without a `sticky` field (or with `sticky: 0`) keep their normal ordering
+by date. The archive page stays purely chronological and is not affected.
+
 ### Projects list
 
 Create a projects file `source/_data/projects.json` to show a list of your projects on the index page.

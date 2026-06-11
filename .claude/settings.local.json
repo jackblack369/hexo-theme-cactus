@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -c scripts/sticky.js)",
+      "Bash(npx --no-install jshint scripts/sticky.js)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
